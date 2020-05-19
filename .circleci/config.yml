@@ -6,3 +6,19 @@ jobs:
     steps:
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
+
+
+name: My GitHub Actions Workflow
+
+on: [push]
+
+jobs:
+  job_1:
+    runs-on: ubuntu-latest
+    steps:
+      # job steps
+  job_2:
+    needs: job_1
+    runs-on: ubuntu-latest
+    steps:
+      # job steps
