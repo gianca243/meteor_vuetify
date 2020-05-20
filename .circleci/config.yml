@@ -12,6 +12,9 @@ jobs:
       - run: echo "hello world" # run the `echo` command
       - run: npm i 
       - run: echo "tercera prueba de hoy"
+      - run: cd tests
+      - run: node ./prueba.js
+      - run: echo "omg"
 
 
 
