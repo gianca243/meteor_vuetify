@@ -2,12 +2,12 @@ version: 2.1
 
 name: My GitHub Actions Workflow
 
-on: [push]
-jobs:
-  build:
-    docker: 
-      - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
-    steps:
+on: [push] #con esta linea se indica en que momento se debe realizar los pasos a continuación
+jobs: #jobs establece donde y como se va a ejecutar el codigo
+  build: #establece la configuración del como y donde
+    docker:  #el docker indica que imagen(hace referencia a la plataforma o a SO en especifo)
+      - image: circleci/node:4.8.2 # Este aparto indica con cual plataforma se elabora los pasos a seguir
+    steps: #comienza el lugar donde se haran las distintas instrucciones 
       - checkout # check out the code in the project directory
       - run: echo "hello world" # run the `echo` command
       - run: npm i 
