@@ -25,8 +25,8 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: curl https://install.meteor.com | /bin/sh; npm install
-            - run: npm run test
+            - run: curl https://install.meteor.com | /bin/sh; npm install ; npm run test
+           
 
 
 
