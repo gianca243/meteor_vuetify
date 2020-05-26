@@ -27,6 +27,9 @@ jobs:
           steps:
             - run: curl https://install.meteor.com | /bin/sh; npm install ; npm update ; meteor update
             - run: npm run test
+            - run:
+              name: test echo
+              commands: meteor npm run testHola<
           
 
 
