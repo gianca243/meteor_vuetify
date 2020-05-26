@@ -31,7 +31,7 @@ jobs:
                   command -v meteor >/dev/null 2>&1 || curl https://install.meteor.com | /bin/sh
             - run: npm install ; npm update ; meteor update
             - run: npm run test
-            - run: meteor npm run testHola            
+            - run: meteor npm run test:hola            
             - run:
                 name: lo que sea
                 command: echo "hello"
