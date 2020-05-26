@@ -29,8 +29,8 @@ jobs:
             - run: npm run test
             - run: meteor npm run testHola
             - run:
-              name: lo que sea
-              command: echo "hello"
+                name: lo que sea
+                command: echo "hello"
           
 
 
