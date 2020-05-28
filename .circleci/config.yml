@@ -28,15 +28,10 @@ jobs:
             - run:
                 name: install Meteor
                 command: | #only install meteor if bin isn't found
-                  command -v meteor >/dev/null 2>&1 || curl https://install.meteor.com | /bin/sh
+                 command -v meteor >/dev/null 2>&1 || curl https://install.meteor.com | /bin/sh
             - run: npm install ; npm update ; meteor update
             - run: npm run test
             - run: meteor npm run test:hola            
             - run:
                 name: lo que sea
                 command: echo "hello"
-          
-
-
-  
- 

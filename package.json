@@ -5,6 +5,7 @@
         "start": "meteor run",
         "test": "meteor test --once --driver-package meteortesting:mocha",
         "test:hola": "echo 'hello world'",
+        "ejnode": "node ./tests/prueba.js",
         "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
         "visualize": "meteor --production --extra-packages bundle-visualizer",
         "prueba": "echo 'aqui estoy'",
